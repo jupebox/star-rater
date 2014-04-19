@@ -1,0 +1,46 @@
+/*Star Rater Plugin CSS*/
+
+.star-rater li {
+	float:left;
+	list-style-type:none;
+	margin-right:10px;
+}
+
+.star-rater a {
+	display: block;
+	height: 15px;
+	width: 25px;
+	text-indent: -9999px;
+	background: url("tea-star-sprite.png") top center;	
+	background-size: 100%;
+}
+
+.star-rater.unrated .full-star a {
+	background-position:25px 33px;
+}
+
+.star-rater.unrated .half-star a {
+	background-position:25px 51px;
+}
+
+.star-rater.unrated a:hover, .star-rater.unrated a:focus {
+	background-position:bottom center;
+}
+
+.star-rater.rated a, .star-rater.rated a:hover, .star-rater.rated a:focus {
+	cursor:default;
+	background-position:top center;
+}
+
+.star-rater.rated a.chosen, .star-rater.rated a.chosen:hover, .star-rater.rated a.chosen:focus {
+	background-position:bottom center;
+}
+
+.star-rater.rated a, .star-rater.rated a:hover, .star-rater.rated a:focus {
+	cursor:default;
+	background-position:top center;
+}
+
+.star-rater-average {
+	clear:left;
+}
